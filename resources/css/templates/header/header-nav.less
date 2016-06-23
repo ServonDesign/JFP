@@ -1,0 +1,34 @@
+.header__nav {
+  .flexbox();
+  .flex-direction(column);
+  .align-items(end);
+}
+
+.header__nav--main {
+  margin-bottom: 1.8rem;
+  .header__nav--menu {
+    .flexbox();
+    .align-items(center);
+
+    span {
+      margin-right: 1.5rem;
+      font-size: 1.8rem;
+      color: @blue-light;
+    }
+  }
+  .header__nav--menu a,
+  .header__nav--menu svg {
+    width: 3.3rem;
+    height: 3.3rem;
+    display: block;
+    fill: @blue-light;
+  }
+}
+
+.header__nav--contact {
+  .contact--nav {
+    font-size: 1.6rem;
+    color: @blue-dark;
+    margin: 0;
+  }
+}

@@ -1,13 +1,92 @@
  		<footer id="footer" class="footer">
 			<div class="footer--container">
+        <div class="footer__links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Non-Exec Directors</a></li>
+              <li><a href="#">Case Studies</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Speaking</a></li>
+              <li><a href="#">News/Blog</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        <div class="footer__right--section">
+          <div class="footer__contacts">
+            <div class="footer__social">
+              <a href=""><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-48px-glyph-1_logo-facebook"></use></svg></a>
+              <a href=""><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-48px-glyph-1_logo-linkedin"></use></svg></a>
+            </div>
+            <div class="footer__address">
+              <p>© JFP Strategic Planning 2016<p>
+              <p>377-399 London Road, Camberley, GU15 3HL</p>
+              <p>Tel: 01344 872230 • sp@jfpstrategic-planning.co.uk</p>
+            </div>
+            <div class="footer__design">
+              <p>
+                Website design & build Servon Design Ltd
+              </p>
+            </div>
+          </div>
+          <div class="footer__map" id="map">
 
-			</div>
+          </div>
+        </div>
+      </div>
 		</footer>
 
 	</div>
 	<!-- scripts
 	================================================== -->
+
 	<script src="../resources/js/dist/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+		// In the following example, markers appear when the user clicks on the map.
+		// Each marker is labeled with a single alphabetical character.
+		var labels = '';
+		var labelIndex = 0;
+
+		function initialize() {
+			var sample = {
+				lat: 51.3374433,
+				lng: -0.7212121
+			};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 12,
+				center: sample,
+				draggable: false,
+     			scrollwheel: false,
+			});
+
+			// This event listener calls addMarker() when the map is clicked.
+			// google.maps.event.addListener(map, 'click', function(event) {
+			// 	addMarker(event.latLng, map);
+			// });
+
+			// Add a marker at the center of the map.
+			//addMarker(sample, map);
+		}
+
+		// Adds a marker to the map.
+		// function addMarker(location, map) {
+		// 	// Add the marker at the clicked location, and add the next-available label
+		// 	// from the array of alphabetical characters.
+		// 	var marker = new google.maps.Marker({
+		// 		position: location,
+		// 		label: labels[labelIndex++ % labels.length],
+		// 		map: map,
+		// 		icon: "./resources/imgs/svg/marker-green.svg"
+		// 	});
+		// }
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 
 </body>
 

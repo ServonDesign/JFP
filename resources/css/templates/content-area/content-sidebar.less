@@ -1,6 +1,17 @@
 .content-sidebar {
-  max-width: 27rem;
-  min-width: 27rem;
+  max-width: 18.3rem;
+  min-width: 18.3rem;
+  transform: 0.3s all ease;
+
+  @media(min-width: @sm-min) {
+    max-width: 18.3rem;
+    min-width: 18.3rem;
+  }
+
+  @media(min-width: @md-min) {
+    max-width: 27rem;
+    min-width: 27rem;
+  }
 
   h3 {
     font-size: 2rem;
@@ -29,11 +40,19 @@
     .align-items(center);
 
     svg {
-      max-height: 6.2rem;
-      max-width: 6.2rem;
+      max-height: 3.4rem;
+      max-width: 3.4rem;
       margin: 0 1.3rem;
       width: 100%;
       height: 100%;
+
+      @media(min-width: @md-min) {
+        max-height: 6.2rem;
+        max-width: 6.2rem;
+        margin: 0 1.3rem;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     h4 {
@@ -41,6 +60,14 @@
       font-weight: 400;
       margin: 0;
       padding-right: 1rem;
+
+      @media(min-width: @sm-min) {
+        font-size: 1.4rem;
+      }
+
+      @media(min-width: @md-min) {
+        font-size: 2.1rem;
+      }
     }
   }
 

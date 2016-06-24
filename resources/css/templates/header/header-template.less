@@ -1,5 +1,10 @@
 .header {
   overflow: hidden;
+  padding: 0 2rem;
+
+  @media(min-width: @lg-min) {
+    padding: 0;
+  }
 
   &:after {
     content: "";
@@ -18,9 +23,10 @@
     .container();
     .justify-content(space-between);
     .align-items(center);
+    height: 15.2rem;
+    width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    height: 15.2rem;
   }
 
   .header--container__bottom {
@@ -43,6 +49,19 @@
         text-align: left;
         padding: 0 0 0 1.6rem;
         .font-bold;
+
+        .flexbox();
+        .align-items(center);
+        .justify-content(space-between);
+
+        span {
+          margin-right: 1rem;
+          svg {
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+          }
+        }
       }
     }
 
@@ -50,7 +69,15 @@
       .flexbox();
       .align-items(center);
       color: @white;
-      margin-left: 1.2rem;
+      margin-left: 2rem;
+
+      @media(min-width: @sm-min) {
+        margin-left: 2rem;
+      }
+
+      @media(min-width: @md-min) {
+        margin-left: 1.2rem;
+      }
 
       span {
         .flexbox();

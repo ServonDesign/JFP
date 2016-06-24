@@ -7,8 +7,6 @@
   &--container {
     .container();
     .flex-wrap(nowrap);
-    padding-left: 0 !important;
-    padding-right: 0 !important;
   }
 
   ul {
@@ -32,6 +30,11 @@
     .flexbox();
     .justify-content(end);
     width: 100%;
+    flex-wrap: wrap;
+
+    @media(min-width: @md-min) {
+      flex-wrap: nowrap;
+    }
   }
 
   .footer__links {
@@ -53,8 +56,15 @@
     .flexbox();
     .flex-direction(column);
     .justify-content(space-between);
-    height: 100%;
-    margin-right: 3.3rem;
+    height: 50%;
+    margin-bottom: 5rem;
+
+    @media(min-width: @md-min) {
+      height: 100%;
+      margin-right: 3.3rem;
+      margin-bottom: 0;
+      .justify-content(space-between);
+    }
 
     .footer__social {
       .flexbox();

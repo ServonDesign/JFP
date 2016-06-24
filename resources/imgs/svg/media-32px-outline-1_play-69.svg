@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="nc-icon outline" viewBox="0 0 32 32">
+  <g fill="none" stroke="#444" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square">
+    <path d="M1 1h30v30H1z"/>
+    <path d="M13 12l6 4-6 4z" data-color="color-2"/>
+    <path d="M1 6h30M1 26h30M6 1v5m5-5v5m5-5v5m5-5v5m5-5v5M6 26v5m5-5v5m5-5v5m5-5v5m5-5v5"/>
+  </g>
+</svg>

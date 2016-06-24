@@ -1,0 +1,157 @@
+.content-sidebar {
+  max-width: 27rem;
+  min-width: 27rem;
+
+  h3 {
+    font-size: 2rem;
+    color: @blue-lightest;
+  }
+}
+
+.portlet {
+  position: relative;
+  margin-bottom: 1rem;
+
+  .img-overflow {
+    float: right;
+    margin: -62px -14px 0 0;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0 1.5rem 0;
+    line-height: 1.25;
+  }
+
+  .portlet__icon--container {
+    .flexbox();
+    .align-items(center);
+
+    svg {
+      max-height: 6.2rem;
+      max-width: 6.2rem;
+      margin: 0 1.3rem;
+      width: 100%;
+      height: 100%;
+    }
+
+    h4 {
+      font-size: 2.1rem;
+      font-weight: 400;
+      margin: 0;
+      padding-right: 1rem;
+    }
+  }
+
+  .cta + a,
+  .cta + a + a {
+    padding: 0.1rem 1.5rem 0.5rem;
+  }
+
+  .cta {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: @white;
+
+    .flexbox();
+    .align-items(center);
+    .justify-content(end);
+
+    padding-right: 1.5rem;
+
+    span {
+      width: 1.4rem;
+      height: 1.4rem;
+      display: block;
+      margin-left: 0.5rem;
+
+      svg {
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+
+
+  &.light-gold {
+    background-color: @gold-light;
+    color: @white;
+    padding-top: 1.9rem;
+
+    .cta {
+      background-color: @gold-dark;
+    }
+  }
+
+  &.green {
+    background-color: @portlet-green;
+
+    .portlet__icon--container {
+      padding: 1.1rem 0 0.4rem;
+    }
+  }
+
+  &.blue {
+    background-color: @portlet-blue;
+
+    .portlet__icon--container {
+      padding: 1.1rem 0 0.7rem;
+    }
+
+  }
+
+  &.dark-blue {
+    background-color: @portlet-dark-blue;
+
+    .portlet__icon--container {
+      padding: 1rem 0;
+    }
+
+    .cta-first {
+      padding: 0.4rem 1.5rem 0.5rem 0;
+    }
+
+    .cta:last-child {
+      padding: 0.5rem 1.5rem 1rem 0;
+    }
+  }
+
+  &.green,
+  &.blue,
+  &.dark-blue {
+    color: @white;
+    position: relative;
+
+    .portlet__icon--container {
+      position: relative;
+      z-index: 1;
+
+      &:after {
+        content: "";
+        background: url('../imgs/portlet_small_bg.png') no-repeat;
+        background-size: cover;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+      }
+
+    }
+
+    // &:after {
+    //   content: "";
+    //   background: url('../imgs/portlet_small_bg.png') no-repeat;
+    //   opacity: 0.1;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   position: absolute;
+    // }
+  }
+}

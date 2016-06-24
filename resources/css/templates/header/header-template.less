@@ -45,6 +45,35 @@
         .font-bold;
       }
     }
+
+    .header__breadcrumbs {
+      .flexbox();
+      .align-items(center);
+      color: @white;
+      margin-left: 1.2rem;
+
+      span {
+        .flexbox();
+        .align-items(center);
+        line-height: 1;
+        font-size: 1.8rem;
+        &:after {
+          content: "";
+          background-color: @white;
+          width: 0.4rem;
+          height: 0.4rem;
+          border-radius: 50%;
+          margin: 0 0.6rem;
+        }
+
+        &:last-child:after {
+          content: "";
+          width: 0;
+          height: 0;
+          margin: 0;
+        }
+      }
+    }
   }
 
 }

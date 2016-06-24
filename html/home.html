@@ -26,6 +26,7 @@
 
 <nav class="main__nav">
 	<button class="close-nav">
+		X Close
 		<svg>
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
 		</svg>
@@ -55,25 +56,84 @@
 </nav>
 <div id="main-wrapper" class="page-wrapper">
 	<div class="svg-sprite" style="display:none;">
-		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="hide">
-			<symbol id="close" viewBox="0 0 16 16"><g>
-				<polygon fill="#ffffff" points="12.2,0.9 8,5.2 3.8,0.9 0.9,3.8 5.2,8 0.9,12.2 3.8,15.1 8,10.8 12.2,15.1 15.1,12.2 10.8,8
-					15.1,3.8 "/>
-				</g>
-			</symbol>
-		<symbol id="menu-bold" viewBox="0 0 48 48">
-		  <g>
-		    <path d="M46 20H2c-.6 0-1 .4-1 1v6c0 .6.4 1 1 1h44c.6 0 1-.4 1-1v-6c0-.6-.4-1-1-1z" data-color="color-2"/>
-		    <path d="M46 4H2c-.6 0-1 .4-1 1v6c0 .6.4 1 1 1h44c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1zm0 32H2c-.6 0-1 .4-1 1v6c0 .6.4 1 1 1h44c.6 0 1-.4 1-1v-6c0-.6-.4-1-1-1z"/>
-		  </g>
-		</symbol><symbol id="svg">
-		  <symbol id="menu-bold" viewBox="0 0 48 48">
-		    <g>
-		      <path d="M46 20H2c-.6 0-1 .4-1 1v6c0 .6.4 1 1 1h44c.6 0 1-.4 1-1v-6c0-.6-.4-1-1-1z" data-color="color-2"/>
-		      <path d="M46 4H2c-.6 0-1 .4-1 1v6c0 .6.4 1 1 1h44c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1zm0 32H2c-.6 0-1 .4-1 1v6c0 .6.4 1 1 1h44c.6 0 1-.4 1-1v-6c0-.6-.4-1-1-1z"/>
-		    </g>
-		  </symbol>
-		</symbol>
+		<svg xmlns="http://www.w3.org/2000/svg" class="hide">
+		    <symbol id="arrows-32px-glyph-1_minimal-left" viewBox="0 0 32 32">
+		        <path fill="#ffffff" d="M23 31.414L8.293 16.707c-.391-.391-.391-1.023 0-1.414L23 .586 24.414 2l-14 14 14 14L23 31.414z"/>
+		    </symbol>
+		    <symbol id="arrows-32px-glyph-1_minimal-right" viewBox="0 0 32 32">
+		        <path fill="#ffffff" d="M9 31.414L7.586 30l14-14-14-14L9 .586l14.707 14.707c.391.391.391 1.023 0 1.414L9 31.414z"/>
+		    </symbol>
+		    <symbol id="arrows-32px-glyph-1_small-triangle-left" viewBox="0 0 32 32">
+		        <path fill="#444" d="M20.4 8.2l-10 7c-.2.2-.4.5-.4.8s.2.6.4.8l10 7c.2.1.4.2.6.2.2 0 .3 0 .5-.1.3-.2.5-.5.5-.9V9c0-.4-.2-.7-.5-.9-.4-.2-.8-.1-1.1.1z"/>
+		    </symbol>
+		    <symbol id="arrows-32px-glyph-1_small-triangle-right" viewBox="0 0 32 32">
+		        <path fill="#444" d="M11.6 8.2c-.3-.2-.7-.2-1-.1-.4.2-.6.5-.6.9v14c0 .4.2.7.5.9.2.1.3.1.5.1s.4-.1.6-.2l10-7c.3-.2.4-.5.4-.8s-.2-.6-.4-.8l-10-7z"/>
+		    </symbol>
+		    <symbol id="business-32px-outline_bulb-61" viewBox="0 0 32 32">
+		        <g fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+		            <path d="M27 12c0-6.1-4.9-11-11-11S5 5.9 5 12c0 4.3 2.4 8 6 9.8V26h10v-4.2c3.6-1.8 6-5.5 6-9.8z"/>
+		            <path d="M10 15c0-1.1.9-2 2-2s2 .9 2 2v2h-2c-1.1 0-2-.9-2-2zm4 2v9m8-11c0-1.1-.9-2-2-2s-2 .9-2 2v2h2c1.1 0 2-.9 2-2zm-4 2v9m-4-9h4"/>
+		            <path d="M11 29h10m-7 2h4" data-color="color-2"/>
+		        </g>
+		    </symbol>
+		    <symbol id="media-32px-outline-1_brightness-46" viewBox="0 0 32 32">
+		        <g fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+		            <path d="M1 16h2M5.4 5.4l1.4 1.4M16 1v2m10.6 2.4l-1.4 1.4M31 16h-2m-2.4 10.6l-1.4-1.4M16 31v-2M5.4 26.6l1.4-1.4" data-color="color-2"/>
+		            <circle cx="16" cy="16" r="8"/>
+		        </g>
+		    </symbol>
+		    <symbol id="media-32px-outline-1_play-69" viewBox="0 0 32 32">
+		        <g fill="none" stroke="#444" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square">
+		            <path d="M1 1h30v30H1z"/>
+		            <path d="M13 12l6 4-6 4z" data-color="color-2"/>
+		            <path d="M1 6h30M1 26h30M6 1v5m5-5v5m5-5v5m5-5v5m5-5v5M6 26v5m5-5v5m5-5v5m5-5v5m5-5v5"/>
+		        </g>
+		    </symbol>
+		    <symbol id="nature-32px-outline_plant-ground" viewBox="0 0 32 32">
+		        <g fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+		            <path d="M16 26.125V2.1294" data-cap="butt" data-color="color-2"/>
+		            <path d="M23 11h-1c-3.3137 0-6 2.6863-6 6v4h1c3.3137 0 6-2.6863 6-6v-4zM9 7h1c3.3137 0 6 2.6863 6 6v4h-1c-3.3137 0-6-2.6863-6-6V7z" data-color="color-2"/>
+		            <path d="M1 30h9c0-1.1046.89545-2 2-2 .49872 0 .94916.1891 1.29944.49103C13.8955 27.03088 15.32544 26 17 26c2.20917 0 4 1.79083 4 4h10"/>
+		        </g>
+		    </symbol>
+		    <symbol id="social-48px-glyph-1_logo-facebook" viewBox="0 0 48 48">
+		        <path
+		            fill="#444"
+		            d="M46 0H2C.89543 0 0 .89543 0 2v44c0 1.10457.89543 2 2 2h23.6383V29.4119H19.383v-7.24417h6.2553v-5.34235c0-6.19977 3.7866-9.57566 9.31722-9.57566 2.64922 0 4.9261.19724 5.58963.2854v6.47912l-3.83577.00174c-3.00786 0-3.59026 1.4293-3.59026 3.52668v4.62507h7.17347l-.93404 7.24417H33.1191V48H46c1.10457 0 2-.89543 2-2V2c0-1.10457-.89543-2-2-2z"/>
+		    </symbol>
+		    <symbol id="social-48px-glyph-1_logo-linkedin" viewBox="0 0 48 48">
+		        <path
+		            fill="#444"
+		            d="M46 0H2C.9 0 0 .9 0 2v44c0 1.1.9 2 2 2h44c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM14.2 40.9H7.1V18h7.1v22.9zm-3.5-26c-2.3 0-4.1-1.8-4.1-4.1s1.8-4.1 4.1-4.1 4.1 1.8 4.1 4.1c0 2.2-1.8 4.1-4.1 4.1zm30.2 26h-7.1V29.8c0-2.7 0-6.1-3.7-6.1s-4.3 2.9-4.3 5.9v11.3h-7.1V18h6.8v3.1h.1c.9-1.8 3.3-3.7 6.7-3.7 7.2 0 8.5 4.7 8.5 10.9v12.6z"/>
+		    </symbol>
+		    <symbol id="sport-32px-outline_tactic" viewBox="0 0 32 32">
+		        <g fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10">
+		            <path d="M11.8283 20.1717L25 7" data-cap="butt" data-color="color-2"/>
+		            <path d="M6 6l6 6m-6 0l6-6m8 14l6 6m-6 0l6-6" data-color="color-2" stroke-linecap="square"/>
+		            <circle cx="9" cy="23" r="4" data-color="color-2" stroke-linecap="square"/>
+		            <path d="M19 7h6v6" data-color="color-2" stroke-linecap="square"/>
+		            <path d="M1 1h30v30H1z" stroke-linecap="square"/>
+		        </g>
+		    </symbol>
+		    <symbol id="transportation-32px-outline_boat-small-02" viewBox="0 0 32 32">
+		        <g fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+		            <path d="M26 29H3l-1-4h27z" data-color="color-2"/>
+		            <path d="M21 11v10h5zM4 21h13V3z"/>
+		        </g>
+		    </symbol>
+		    <symbol id="ui-32px-glyph-2_menu-bold" viewBox="0 0 32 32">
+		        <g fill="#576272">
+		            <path d="M30 13H2c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1h28c.6 0 1-.4 1-1v-4c0-.6-.4-1-1-1z" data-color="color-2"/>
+		            <path d="M30 3H2c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1zm0 20H2c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1h28c.6 0 1-.4 1-1v-4c0-.6-.4-1-1-1z"/>
+		        </g>
+		    </symbol>
+		    <symbol id="ui-32px-glyph-3_phone-call" viewBox="0 0 32 32">
+		        <g fill="#444">
+		            <path d="M32 14h-2v-1c0-6.065-4.935-11-11-11h-1V0h1c7.168 0 13 5.832 13 13v1z" data-color="color-2"/>
+		            <path d="M26 14h-2v-1c0-2.757-2.243-5-5-5h-1V6h1c3.86 0 7 3.14 7 7v1z" data-color="color-2"/>
+		            <path d="M25.175 32C11.271 32 0 20.729 0 6.825l4.528-4.528c.396-.396 1.038-.396 1.434 0l5.909 5.909c.396.396.396 1.038 0 1.434l-4.528 4.528 10.49 10.49 4.528-4.528c.396-.396 1.038-.396 1.434 0l5.909 5.909c.396.396.396 1.038 0 1.434L25.175 32z"/>
+		        </g>
+		    </symbol>
 		</svg>
 	</div>
 	<header id="header" class="header">
@@ -86,9 +146,7 @@
 					<div class="header__nav--menu">
 						<span>menu</span>
 						<a href="#">
-							<svg>
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-bold"></use>
-							</svg>
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ui-32px-glyph-2_menu-bold"></use></svg>
 						</a>
 					</div>
 				</div>
@@ -99,6 +157,11 @@
 		</div>
 		<div class="header--container__bottom">
 			<div class="header--bottom--content">
+					<div class="header__breadcrumbs">
+						<span>Vision</span>
+						<span>Action</span>
+						<span>Belief</span>
+					</div>
 					<button>Which Direction?</button>
 			</div>
 		</div>
@@ -109,7 +172,9 @@
 	      <!-- <div class="slider__item"> -->
 	          <div class="slider__content">
 	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
 	            </div>
 	            <div class="slider__body">
 	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
@@ -120,7 +185,35 @@
 	      <!-- <div class="slider__item"> -->
 	          <div class="slider__content">
 	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nature-32px-outline_plant-ground"></use>
+	              </svg>
+	            </div>
+	            <div class="slider__body">
+	              <h4>Business Startup Programme</h4>
+	              <h5>An interactive strategic service for new businesses</h5>
+	            </div>
+	          </div>
+	      <!-- </div> -->
+	      <!-- <div class="slider__item"> -->
+	          <div class="slider__content">
+	            <div class="slider__icon">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
+	            </div>
+	            <div class="slider__body">
+	              <h4>A Facilitated and Interactive Top Line Review Service</h4>
+	              <h5>Planning for the top line growth you need</h5>
+	            </div>
+	          </div>
+	      <!-- </div> -->
+	      <!-- <div class="slider__item"> -->
+	          <div class="slider__content">
+	            <div class="slider__icon">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
 	            </div>
 	            <div class="slider__body">
 	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
@@ -131,7 +224,35 @@
 	      <!-- <div class="slider__item"> -->
 	          <div class="slider__content">
 	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nature-32px-outline_plant-ground"></use>
+	              </svg>
+	            </div>
+	            <div class="slider__body">
+	              <h4>Business Startup Programme</h4>
+	              <h5>An interactive strategic service for new businesses</h5>
+	            </div>
+	          </div>
+	      <!-- </div> -->
+	      <!-- <div class="slider__item"> -->
+	          <div class="slider__content">
+	            <div class="slider__icon">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
+	            </div>
+	            <div class="slider__body">
+	              <h4>A Facilitated and Interactive Top Line Review Service</h4>
+	              <h5>Planning for the top line growth you need</h5>
+	            </div>
+	          </div>
+	      <!-- </div> -->
+	      <!-- <div class="slider__item"> -->
+	          <div class="slider__content">
+	            <div class="slider__icon">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
 	            </div>
 	            <div class="slider__body">
 	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
@@ -142,7 +263,35 @@
 	      <!-- <div class="slider__item"> -->
 	          <div class="slider__content">
 	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nature-32px-outline_plant-ground"></use>
+	              </svg>
+	            </div>
+	            <div class="slider__body">
+	              <h4>Business Startup Programme</h4>
+	              <h5>An interactive strategic service for new businesses</h5>
+	            </div>
+	          </div>
+	      <!-- </div> -->
+	      <!-- <div class="slider__item"> -->
+	          <div class="slider__content">
+	            <div class="slider__icon">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
+	            </div>
+	            <div class="slider__body">
+	              <h4>A Facilitated and Interactive Top Line Review Service</h4>
+	              <h5>Planning for the top line growth you need</h5>
+	            </div>
+	          </div>
+	      <!-- </div> -->
+	      <!-- <div class="slider__item"> -->
+	          <div class="slider__content">
+	            <div class="slider__icon">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
 	            </div>
 	            <div class="slider__body">
 	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
@@ -153,91 +302,73 @@
 	      <!-- <div class="slider__item"> -->
 	          <div class="slider__content">
 	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nature-32px-outline_plant-ground"></use>
+	              </svg>
 	            </div>
 	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
+	              <h4>Business Startup Programme</h4>
+	              <h5>An interactive strategic service for new businesses</h5>
 	            </div>
 	          </div>
 	      <!-- </div> -->
 	      <!-- <div class="slider__item"> -->
 	          <div class="slider__content">
 	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
+	              <svg>
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#media-32px-outline-1_brightness-46"></use>
+	              </svg>
 	            </div>
 	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
+	              <h4>A Facilitated and Interactive Top Line Review Service</h4>
+	              <h5>Planning for the top line growth you need</h5>
 	            </div>
 	          </div>
 	      <!-- </div> -->
-	      <!-- <div class="slider__item"> -->
-	          <div class="slider__content">
-	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
-	            </div>
-	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
-	            </div>
-	          </div>
-	      <!-- </div> -->
-	      <!-- <div class="slider__item"> -->
-	          <div class="slider__content">
-	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
-	            </div>
-	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
-	            </div>
-	          </div>
-	      <!-- </div> -->
-	      <!-- <div class="slider__item"> -->
-	          <div class="slider__content">
-	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
-	            </div>
-	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
-	            </div>
-	          </div>
-	      <!-- </div> -->
-	      <!-- <div class="slider__item"> -->
-	          <div class="slider__content">
-	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
-	            </div>
-	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
-	            </div>
-	          </div>
-	      <!-- </div> -->
-	      <!-- <div class="slider__item"> -->
-	          <div class="slider__content">
-	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
-	            </div>
-	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
-	            </div>
-	          </div>
-	      <!-- </div> -->
-	      <!-- <div class="slider__item"> -->
-	          <div class="slider__content">
-	            <div class="slider__icon">
-	              <img src="../resources/imgs/slider_icon_sample.png" alt="">
-	            </div>
-	            <div class="slider__body">
-	              <h4>A Free Introductory and Proactive ‘Re-Energising Session’ for your Business</h4>
-	              <h5>Focus on what’s important to you</h5>
-	            </div>
-	          </div>
-	      <!-- </div> -->
+	    </div>
+	  </div>
+	</section>
+	<section class="content-area">
+	  <div class="content-area--container">
+	    <div class="content-sidebar">
+	      <h3>It's a bit like the frog in the saucepan...</h3>
+	      <div class="portlet light-gold">
+	        <img src="../resources/imgs/frog.png" alt="" class="img-overflow"/>
+	        <p>
+	          Small and medium size enterprises are generally busy doing the thing they do best - plying their trade or profession. Change rarely arrives announced. Evolution, not revolution, is the natural order. It is a creeping progressive thing.
+	        </p>
+	        <p>
+	          It's a bit like the frog in the saucepan...
+	        </p>
+	        <a href="#" class="cta">Find out more <span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrows-32px-glyph-1_minimal-right"></use></svg></span></a>
+	        <img src="../resources/imgs/portlet_image.jpg" alt="Portlet Image">
+	      </div>
+	      <div class="portlet green">
+	        <div class="portlet__icon--container">
+	          <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sport-32px-outline_tactic"></use></svg>
+	          <h4>Do you need strategic planning?</h4>
+	        </div>
+	        <a href="#" class="cta">Find out more <span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrows-32px-glyph-1_minimal-right"></use></svg></span></a>
+	      </div>
+	      <div class="portlet blue">
+	        <div class="portlet__icon--container">
+	          <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#business-32px-outline_bulb-61"></use></svg>
+	          <h4>No value<br /> NO fee</h4>
+	        </div>
+	        <a href="#" class="cta">Find out more <span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrows-32px-glyph-1_minimal-right"></use></svg></span></a>
+	      </div>
+	      <div class="portlet dark-blue">
+	        <div class="portlet__icon--container">
+	          <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#transportation-32px-outline_boat-small-02"></use></svg>
+	          <h4>JFP Supported Charities</h4>
+	        </div>
+	        <a href="#" class="cta cta-first">Round the island race <span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrows-32px-glyph-1_minimal-right"></use></svg></span></a>
+	        <a href="#" class="cta">Transatlantic Race <span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrows-32px-glyph-1_minimal-right"></use></svg></span></a>
+	        <a href="#" class="cta">Sydney Hobart Race <span><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrows-32px-glyph-1_minimal-right"></use></svg></span></a>
+	      </div>
+	    </div>
+	    <div class="content-main">
+	      <h2>Strategic Business Planning and Implementation for SMEs</h2>
 	    </div>
 	  </div>
 	</section>

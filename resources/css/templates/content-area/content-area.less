@@ -1,12 +1,26 @@
 .content-area {
-  margin: 4rem 0 0 0;
+	margin: 3rem 0 0 0;
+
+  @media(min-width: @sm-min) {
+    margin: 4rem 0 0 0;
+  }
 }
 
 .content-area--container {
-  .container();
-  .flexbox();
-  .flex-wrap(nowrap);
-  width: 100%;
+	.container();
+	.flexbox();
+	.flex-wrap(wrap-reverse);
+	width: 100%;
+	padding: 0 1.5rem;
+
+
+	@media(min-width: @sm-min) {
+		.flex-wrap(nowrap);
+	}
+
+	@media(min-width: @lg-min) {
+		padding: 0 0;
+	}
 }
 
 @import "content-sidebar";

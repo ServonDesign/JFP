@@ -5,7 +5,12 @@
 }
 
 .header__nav--main {
-  margin-bottom: 1.8rem;
+
+  @media(min-width: @sm-min) {
+    margin-bottom: 1.8rem;
+    padding-right: 0;
+  }
+
   .header__nav--menu {
     .flexbox();
     .align-items(center);
@@ -14,14 +19,24 @@
       margin-right: 1.5rem;
       font-size: 1.8rem;
       color: @blue-light;
+      display: none;
+
+      @media(min-width: @sm-min) {
+        display: block;
+      }
     }
   }
   .header__nav--menu a,
   .header__nav--menu svg {
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 6.1rem;
+    height: 5.3rem;
     display: block;
     fill: @blue-light;
+
+    @media(min-width: @sm-min) {
+      width: 3.3rem;
+      height: 3.3rem;
+    }
   }
 }
 
@@ -30,5 +45,11 @@
     font-size: 1.6rem;
     color: @blue-dark;
     margin: 0;
+    display: none;
+
+    @media(min-width: @sm-min) {
+      display: block;
+    }
   }
+
 }

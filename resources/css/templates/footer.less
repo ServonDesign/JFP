@@ -48,10 +48,15 @@
 
     @media(min-width: @sm-min) {
       .justify-content(end);
-      padding-right: 1.8rem;
+      //padding-right: 1.8rem;
     }
 
     @media(min-width: @md-min) {
+      flex-wrap: wrap;
+      padding-right: 0.3rem;
+    }
+
+    @media(min-width: @lg-min) {
       flex-wrap: nowrap;
       padding-right: 0.3rem;
     }
@@ -92,8 +97,9 @@
     .align-items(center);
 
     @media(min-width: @sm-min) {
-      height: 50%;
+      height: auto;
       margin-bottom: 2.7rem;
+      margin-right: 3.3rem;
       .align-items(end);
     }
 

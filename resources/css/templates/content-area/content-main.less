@@ -33,12 +33,13 @@
   .content-item {
     margin-bottom: 1.5rem;
 
-    h5 {
+    h5 a {
       color: @blue-lightest;
       font-size: 2.1rem;
       margin: 0;
       font-weight: 700;
       padding-bottom: 0.5rem;
+      text-decoration: none;
 
       .flexbox();
       .align-items(center);
@@ -113,6 +114,7 @@
 
     @media(min-width: @sm-min) {
       width: 48%;
+      height: 6.7rem;
     }
 
     @media(min-width: @sm-max) {
@@ -123,8 +125,8 @@
 
     @media(min-width: @md-min) {
       width:47%;
-      height: 11.7rem;
       padding: 0 2rem;
+      height: 11.7rem;
     }
 
     @media(min-width: @lg-min) {
@@ -172,6 +174,10 @@
       }
 
       @media(min-width: @md-min) {
+        font-size: 3rem;
+      }
+
+      @media(min-width: @lg-min) {
         font-size: 3.6rem;
       }
     }
